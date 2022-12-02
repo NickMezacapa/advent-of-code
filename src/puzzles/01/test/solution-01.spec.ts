@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { PuzzleSolution } from "../solution";
+import { PuzzleSolution } from "../solution-01";
 
 
 describe("Day 01 - Couting Calories", () => {
