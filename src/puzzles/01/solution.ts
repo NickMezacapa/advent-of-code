@@ -33,6 +33,7 @@ export class PuzzleSolution {
   }
 }
 
+/* istanbul ignore next */
 export default {
   day: "01",
   name: "Couting Calories",

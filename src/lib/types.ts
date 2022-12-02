@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 export type PuzzleInput = string;
 export type PuzzleResult = number;
 
