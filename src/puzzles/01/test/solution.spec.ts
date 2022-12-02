@@ -19,7 +19,7 @@ describe("Day 01 - Couting Calories", () => {
         })
         describe("finds the elf carrying the most calories", () => {
             describe("parsePerElfCalories", () => {
-                describe("an instance of a class method to handle the given input string", () => {
+                describe("a class method to handle the given input string", () => {
                     it("is defined", () => {
                         expect(puzzle.solvePart1).toBeDefined();
                     });
