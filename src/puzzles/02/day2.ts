@@ -125,13 +125,17 @@ export default class PuzzleSolution {
             if (helperInput.length <= 0) return;
             const round = helperInput[0];
             const roundScore = this.calculateSingleRoundScore(round);
-            totalScore += roundScore[1]; 
-            console.log(`Round: ${round} - Winner: ${roundScore[0]} - Score: ${roundScore[1]} - Total: ${totalScore}`);   
+            totalScore += roundScore[1];   
             helper(helperInput.slice(1));
         }
         helper(entries);
 
         return totalScore;
+    }
+
+    solvePart1(): number {
+        const entries = this.parseInput();
+        return this.calculateTotalScore(entries);
     }
 
     solvePart2(): number {
@@ -152,7 +156,7 @@ export default class PuzzleSolution {
                 }[c]!,
                 0
             )
-            );
+        );
     }
 }
 

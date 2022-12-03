@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import * as fs from "fs";
 
 export function readInputFile(filePath: string): string {

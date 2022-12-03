@@ -131,6 +131,12 @@ describe("Day 2 - Rock, Paper, Scissors", () => {
                             expect(result).toEqual(0);
                         });
                     });
+                    describe("solves part 1", () => {
+                        it("returns the value of .calculateScore()", () => {
+                            const result = solution.solvePart1();
+                            expect(result).toEqual(15);
+                        });
+                    });
                 });
             });
         });

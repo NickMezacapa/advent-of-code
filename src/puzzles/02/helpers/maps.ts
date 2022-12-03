@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 export const inputMap = new Map([
     ["A", "rock"],
     ["B", "paper"],
