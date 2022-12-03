@@ -21,11 +21,15 @@ export default class PuzzleSolution {
         }
 
         getThrowValue(throwValue: string): string {
-            return inputMap.get(throwValue)!;
+            const val: string | undefined = inputMap.get(throwValue);
+            if (!val) return "invalid input";
+            return val;
         }
 
         getThrowPoints(throwValue: string): number {
-            return scoreMap.get(throwValue)!;
+            const points: number | undefined = scoreMap.get(throwValue);
+            if (!points) return 0;
+            return points;
         }
 
         getWinner(round: string[]): [string, string, string, string] {
@@ -113,7 +117,7 @@ export default class PuzzleSolution {
             return [winner[0], gamePoints];
         }
 
-        calculateTotalScore(entries: Entries): string | number {
+        calculateTotalScore(entries: Entries): number {
             let totalScore: number = 0;
             if (entries.length === 0) return totalScore;
 
@@ -127,10 +131,10 @@ export default class PuzzleSolution {
             }
             helper(entries);
 
-            return `The final score is ${totalScore}`;
+            return totalScore;
         }
 
-        getOutcomeFromPattern(round: string[]): string[] {
+/*         getOutcomeFromPattern(round: string[]): string[] {
             let opponentThrow = round[0];
             let opponentThrowValue = this.getThrowValue(opponentThrow);
             
@@ -178,7 +182,10 @@ export default class PuzzleSolution {
         calculatePatternRound(values: string[]): [string, number] {
             const singleRoundScore = this.calculateSingleRoundScore(values);
             return singleRoundScore;
-        }
+        } */
 }
 
 const solution = new PuzzleSolution(inputContent);
+const inputText = solution.parseInput();
+const score = solution.calculateTotalScore(inputText);
+console.log(score);
