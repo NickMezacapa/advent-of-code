@@ -5,7 +5,7 @@ import * as fs from "fs";
 
 // DAY 2 - ROCK, PAPER, SCISSORS
 
-const inputFile: string = "src/puzzles/02/input.txt";
+const inputFile: string = "src/puzzles/02/helpers/input.txt";
 let inputContent = fs.readFileSync(inputFile, "utf8");
 
 export default class PuzzleSolution {
