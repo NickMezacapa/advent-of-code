@@ -71,7 +71,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/puzzles/text.d.ts"
+    "text.d.ts"
   ],
   "exclude": [
     "node_modules"
