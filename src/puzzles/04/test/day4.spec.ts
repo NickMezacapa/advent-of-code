@@ -1,0 +1,1 @@
+import PuzzleSolution from "../day4";
