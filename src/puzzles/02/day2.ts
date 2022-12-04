@@ -1,4 +1,4 @@
-import type { Entries } from "./helpers/types";
+import type { Entries } from "@/lib/types";
 import { inputMap, scoreMap, gameMap, patternMap } from "./helpers/maps";
 import { Puzzle } from "@/lib/types";
 import * as fs from "fs";
@@ -164,5 +164,4 @@ const solution = new PuzzleSolution(inputContent);
 const inputText = solution.parseInput();
 const part1 = solution.calculateTotalScore(inputText);
 const part2 = solution.solvePart2();
-console.log(part1, part2);
 

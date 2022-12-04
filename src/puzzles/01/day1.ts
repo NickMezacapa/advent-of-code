@@ -44,9 +44,6 @@ export default {
 
 
 const puzzle = new PuzzleSolution(inputContent);
-console.log("Day 1 - Counting Calories");
-console.log("Part 1: ", puzzle.solvePart1());
-console.log("Part 2: ", puzzle.solvePart2());
 
 
 
