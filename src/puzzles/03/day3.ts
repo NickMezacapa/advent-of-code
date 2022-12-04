@@ -2,7 +2,7 @@ import type { Entries } from "@/lib/types";
 import * as fs from "fs";
 import alphabetMap from "./helpers/alphabetMap";
 
-const inputFile: string = "src/puzzles/03/helpers/input.txt";
+const inputFile: string = "src/puzzles/03/test/mockInput.txt";
 let inputContent = fs.readFileSync(inputFile, "utf8");
 
 export default class PuzzleSolution {
@@ -75,6 +75,3 @@ export default class PuzzleSolution {
     }
 }
 const puzzle = new PuzzleSolution(inputContent);
-const parsedInput = puzzle.parseInput();
-const part1 = puzzle.solvePart1();
-console.log("part1", part1);
