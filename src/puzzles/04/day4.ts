@@ -5,4 +5,9 @@ const inputFile: string = "src/puzzles/04/test/mockInput.txt";
 let inputContent = fs.readFileSync(inputFile, "utf8");
 
 
-export default class PuzzleSolution {}
+export default class PuzzleSolution {
+    input: string;
+    constructor(input: string) {
+        this.input = input;
+    }
+}
